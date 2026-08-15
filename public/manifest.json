@@ -1,0 +1,10 @@
+{
+  "name": "Kronos V16",
+  "short_name": "Kronos",
+  "description": "Sistema de inmunidad institucional y gobernanza soberana.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#071014",
+  "theme_color": "#071014",
+  "lang": "es"
+}
