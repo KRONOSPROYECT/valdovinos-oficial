@@ -6,6 +6,7 @@ const ID_PATTERN = /^KDC-KRONOS-(\d{8})-([A-Z]+)$/
 type EstadoSello = {
   estado: string
   seal: string
+  timelock: string
 }
 
 // Mapea el sufijo del identificador a su estado y sello correspondiente.
@@ -13,6 +14,7 @@ const SELLOS: Record<string, EstadoSello> = {
   TIMELOCK: {
     estado: "TIMELOCKED",
     seal: "KRONOS 360 - Vehuiah והויה",
+    timelock: "...",
   },
 }
 
@@ -53,5 +55,6 @@ export async function GET(request: NextRequest) {
     verificado: true,
     estado: sello.estado,
     seal: sello.seal,
+    timelock: sello.timelock,
   })
 }

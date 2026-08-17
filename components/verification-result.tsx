@@ -5,6 +5,7 @@ export type VerificationData = {
   verificado: boolean
   estado: string
   seal: string | null
+  timelock?: string
   mensaje?: string
 }
 
@@ -59,6 +60,12 @@ export function VerificationResult({ data }: { data: VerificationData }) {
           <div className="flex flex-col">
             <span className="text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground">Identificador</span>
             <span className="font-mono text-sm text-foreground">{data.id}</span>
+          </div>
+        ) : null}
+        {data.timelock ? (
+          <div className="flex flex-col">
+            <span className="text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground">Timelock</span>
+            <span className="font-mono text-sm text-foreground">{data.timelock}</span>
           </div>
         ) : null}
       </div>
