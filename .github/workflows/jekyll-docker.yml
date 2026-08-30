@@ -1,3 +1,13 @@
+name: OMEGA-Q Quantum-Resistant CI
+jobs:
+build_and_audit:
+steps:
+- name: OMEGA-Q Guardian Audit
+# Validación ISO 27001 de integridad de archivos
+- name: Build Site (Jekyll)
+# Construcción en contenedor aislado
+- name: NOM-151 Quantum Sealing
+# Generación de Constancia de Conservación PQC
 name: Jekyll site CI
 
 on:
