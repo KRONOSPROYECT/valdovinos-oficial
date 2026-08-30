@@ -1,3 +1,25 @@
+# OMEGA-Q: INFRASTRUCTURE SECURITY EXCLUSIONS
+/node_modules
+/.next/
+/out/
+/build
+# Auditoría y Guardianes
+/audit_logs/
+/temp_manifest/
+build_manifest.txt
+*.quantum_temp
+# Criptografía y Entropía
+.quantum_seeds
+/secrets/
+.env*
+!.env.example
+# Logs y Debug
+npm-debug.log*
+yarn-error.log*
+.vercel
+# Artefactos OMEGA-Q
+/workspace/tmp/
+*_OMEGA_Q_SEAL.pdf
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
