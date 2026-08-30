@@ -1,3 +1,6 @@
+npm install # Inicialización de dependencias
+npm run dev # Despliegue en modo auditoría local
+npm run audit # Ejecución manual de Guardianes
 # valdovinos-oficial
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
